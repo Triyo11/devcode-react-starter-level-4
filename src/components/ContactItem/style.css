@@ -6,15 +6,16 @@
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 6px 10px rgb(0 0 0 / 10%);
-}
-
-.contact-item__first-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.contact-item__second-row {
-  text-align: left;
+.contact-item__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
 }
 
 .contact-item__name {
@@ -44,8 +45,18 @@
 
 .contact-item__edit-button {
   background: #16abf8;
+  cursor: pointer;
+}
+
+.contact-item__edit-button:hover {
+  background: #4ec3fd !important;
 }
 
 .contact-item__delete-button {
   background: #dc3545;
+  cursor: pointer;
+}
+
+.contact-item__delete-button:hover {
+  background: #f76b6a !important;
 }
