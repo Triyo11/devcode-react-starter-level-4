@@ -52,6 +52,9 @@ const InputContactForm = (props) => {
     <div className="input-contact__form-container">
       <h1 data-cy="header-title">Devcode Contact Manager</h1>
       <div className="input-contact__form">
+        <div className="input-contact_reset-button-wrapper">
+          <button onClick={resetInputValue} className="input-contact_clear-button">Clear</button>
+        </div>
         <label htmlFor="nama">Nama Lengkap</label>
         <div>
           <input

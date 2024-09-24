@@ -1,5 +1,7 @@
 .input-contact__form {
   text-align: left;
+  display: flex;
+  flex-direction: column;
   width: 90%;
   padding: 24px;
   border-radius: 8px;
@@ -7,6 +9,25 @@
   box-shadow: 0 6px 10px rgb(0 0 0 / 10%);
   margin-left: auto;
   margin-right: auto;
+}
+
+.input-contact_reset-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4px;
+}
+
+.input-contact_clear-button {
+  background-color: #a9a9a9;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.input-contact_clear-button:hover {
+  background-color: #c2c2c2 !important;
 }
 
 h1 {
@@ -29,12 +50,11 @@ input {
 }
 
 button {
-  margin-top: 10px;
-  width: 100%;
+  width: 99.5%;
   height: 36px;
   border: none;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: medium;
   font-weight: bold;
   background: #198754;
   color: #ffffff;
